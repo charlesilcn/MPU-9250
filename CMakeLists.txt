@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.8)
+project(text)
+find_library(wiringPi_LIB wiringPi)
+add_executable(MPU "main.cpp" )
+target_link_libraries(9250${wiringPi_LIB})
