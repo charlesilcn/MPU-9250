@@ -356,17 +356,17 @@ if (MPU9250_fd < 0)
 	Status_Code[2] = -1;
 else
 {
-	_Tmp_MPU9250_SPI_Config[0] = MPU9250_PWR_MGMT_1;
-	_Tmp_MPU9250_SPI_Config[1] = MPU9250_PWR_MGMT_1;
-	wiringPiSPIDataRW(1, _Tmp_MPU9250_SPI_Config, 2); //reset
-	_Tmp_MPU9250_SPI_Config[0] = MPU9250_ACCEL_CONFIG;
-	_Tmp_MPU9250_SPI_Config[1] = MPU9250_MAG_ZOUT_H;
-	wiringPiSPIDataRW(1, _Tmp_MPU9250_SPI_Config, 2); // Accel
-	_Tmp_MPU9250_SPI_Config[0] = MPU9250_GYRO_CONFIG;
-	_Tmp_MPU9250_SPI_Config[1] = MPU9250_MAG_ZOUT_H;
-	wiringPiSPIDataRW(1, _Tmp_MPU9250_SPI_Config, 2); // Gryo
-	_Tmp_MPU9250_SPI_Config[0] = MPU9250_CONFIG;
-	_Tmp_MPU9250_SPI_Config[1] = MPU9250_MAG_XOUT_L;
-	wiringPiSPIDataRW(1, _Tmp_MPU9250_SPI_Config, 2); //config
+	_Tmp_MPU9250_SPI_Config[0] =  MPU9250_PWR_MGMT_1;
+	_Tmp_MPU9250_SPI_Config[1] =  MPU9250_PWR_MGMT_1;
+	wiringPiSPIDataRW(1, _Tmp_MPU9250_SPI_Config, 2); 
+	_Tmp_MPU9250_SPI_Config[0] =  MPU9250_ACCEL_CONFIG;
+	_Tmp_MPU9250_SPI_Config[1] =  MPU9250_MAG_ZOUT_H;
+	wiringPiSPIDataRW(1, _Tmp_MPU9250_SPI_Config, 2); 
+	_Tmp_MPU9250_SPI_Config[0] =  MPU9250_GYRO_CONFIG;
+	_Tmp_MPU9250_SPI_Config[1] =  MPU9250_MAG_ZOUT_H;
+	wiringPiSPIDataRW(1, _Tmp_MPU9250_SPI_Config, 2); 
+	_Tmp_MPU9250_SPI_Config[0] =  MPU9250_CONFIG;
+	_Tmp_MPU9250_SPI_Config[1] =  MPU9250_MAG_XOUT_L;
+	wiringPiSPIDataRW(1, _Tmp_MPU9250_SPI_Config, 2); 
 	Status_Code[2] = 0;
 }
