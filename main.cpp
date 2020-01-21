@@ -7,7 +7,7 @@ int main() {
 	pinMode(4, INOPUT);
 	pinMode(6, INOPUT);
 	pinMode(8, INOPUT);
-	pinMode(10, INOPUT)£»
+	pinMode(10, INOPUT);
 	SF._Tmp_MPU9250_Buffer[0] = wiringPiI2CReadReg8(DF.MPU9250_fd, 0x3B);
 	SF._Tmp_MPU9250_Buffer[1] = wiringPiI2CReadReg8(DF.MPU9250_fd, 0x3C);
 	SF._Tmp_MPU9250_A_X = (SF._Tmp_MPU9250_Buffer[0] << 8 | SF._Tmp_MPU9250_Buffer[1]);
