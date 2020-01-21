@@ -1,6 +1,8 @@
 #include<main.hpp>
 #include<iosteam>
 #include<wiringPi.h>
+int SensorsParse
+void SensorsParse()
 int main() {
 	pinMode(0,INOPUT);
 	pinMode(2, INOPUT);
