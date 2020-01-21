@@ -115,11 +115,14 @@ int main() {
 	  
 
 
+	while (true)
+	{
+		std::cout << SF._uORB_Real_Pitch << "\n";
+		std::cout << SF._uORB_Real__Roll << "\n";
+	}
 
 
-
-	std::cout << SF._uORB_Real_Pitch << "\n";
-	std::cout << SF._uORB_Real__Roll << "\n";
+	
 
 
 
